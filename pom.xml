@@ -23,13 +23,22 @@
     </properties>
 
     <modules>
-        <module>logback</module>
         <module>annotations</module>
         <module>aop</module>
         <module>exception</module>
+        <module>logback</module>
         <module>yml</module>
         <module>swagger2</module>
         <module>utils</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
